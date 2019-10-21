@@ -7,7 +7,6 @@ Slate Grey - #7F7984
 */
 
 body {
-    font-family: "Lato", sans-serif;
     background-color: #A1A2B4;
     margin: 0px;
     /*work on this*/
@@ -23,6 +22,16 @@ html {
     height: 100%;
 }
 
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
 img {
     width: 100%;
 }
@@ -43,13 +52,17 @@ img {
     right: 0;
     bottom: 0;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero h1 {
     color: white;
     letter-spacing: .6rem;
-    text-shadow: 3px 3px 5px #222;
-    font-size: 50px;
+    text-shadow: 3px 3px 5px #2A201C;
+    font-size: 65px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .hero p {
@@ -58,26 +71,27 @@ img {
 }
 
 header ul {
-  display: flex;
-  list-style-type: none;
-  justify-content: center;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 header a {
-  display: block;
-  padding: 1rem 1.5rem;
-  border-bottom: 2px solid transparent;
-  margin: 0 .5em;
-  color: #2A201C;
-  font-family: "Lato", sans-serif;
-  text-decoration: none;
-  font-size: 20px;
-  letter-spacing: .25rem;
+    display: block;
+    padding: 1rem 1.5rem;
+    border-bottom: 2px solid transparent;
+    margin: 0 .5em;
+    color: #2A201C;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-decoration: none;
+    font-size: 25px;
+    letter-spacing: .25rem;
 }
 
 header a:hover {
-  border-bottom: 2px solid #445C6C;
-  margin: 0 .5em;
+    border-bottom: 2px solid #445C6C;
+    margin: 0 .5em;
 }
 
 #current {
