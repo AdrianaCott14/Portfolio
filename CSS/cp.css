@@ -10,6 +10,12 @@ body {
     font-family: "Lato", sans-serif;
     background-color: #A1A2B4;
     margin: 0px;
+    /*work on this*/
+    display: flex;
+    flex-direction: column;
+    /*this needs to go just in main*/
+    /*align-self: center;*/
+    /*max-width: 40em;*/
 }
 
 body,
