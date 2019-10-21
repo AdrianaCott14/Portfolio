@@ -1,6 +1,14 @@
+/*Color Palette
+Dark Slate Blue/Grey - #445C6C
+Dull Warm Brown - #765C4E
+Light Slate Grey - #A1A2B4
+Warm Brown/Black - #2A201C
+Slate Grey - #7F7984
+*/
+
 body {
     font-family: "Lato", sans-serif;
-    background-color: #686e45;
+    background-color: #A1A2B4;
     margin: 0px;
 }
 
@@ -9,64 +17,72 @@ html {
     height: 100%;
 }
 
-/* The hero image */
+img {
+    width: 100%;
+}
 
-.hero-image {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("CottleAdriana.jpg");
+.hero img {
+    display: block;
+}
 
-    /* Set a specific height */
-    height: 100%;
-
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.hero {
     position: relative;
 }
 
-/* Place text in the middle of the image */
-
-.hero-text {
-    text-align: center;
+.hero .text-wrapper {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #D4CFD2;
-    font-size: 40px;
-}
-
-/* Add a black background color to the top navigation */
-
-.topnav {
-    background-color: #353721;
-    overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-
-.topnav a {
-    float: left;
-    color: #D4CFD2;
+    background-color: rgba(0, 0, 0, .3);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     text-align: center;
-    padding: 20px 16px;
-    text-decoration: none;
-    font-size: 21px;
 }
 
-/* Change the color of links on hover */
-
-.topnav a:hover {
-    background-color: #D4CFD2;
-    color: #13100A;
+.hero h1 {
+    color: white;
+    letter-spacing: .6rem;
+    text-shadow: 3px 3px 5px #222;
+    font-size: 50px;
 }
 
-/* Add a color to the active/current link */
+.hero p {
+    margin: 0;
+    color: #fff;
+}
 
-.topnav a.active {
-    background-color: #B54E6F;
-    color: #D4CFD2;
+header ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+header a {
+  display: block;
+  padding: 1rem 1.5rem;
+  border-bottom: 2px solid transparent;
+  margin: 0 .5em;
+  color: #2A201C;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: .25rem;
+}
+
+header a:hover {
+  border-bottom: 2px solid #445C6C;
+  margin: 0 .5em;
+}
+
+#current {
+    color: #445C6C;
+    border-bottom: 2px solid #445C6C;
+}
+
+footer {
+    text-align: center;
+    display: block;
+    color: white;
 }
 
 .row {
@@ -105,12 +121,6 @@ html {
         flex: 100%;
         max-width: 100%;
     }
-}
-
-footer {
-    text-align: center;
-    display: block;
-    color: white;
 }
 
 /* Style inputs with type="text", select elements and textareas */
@@ -183,5 +193,5 @@ input[type=submit]:hover {
     flex-direction: column;
     margin-bottom: 350px;
     margin-top: 150px;
-    align-content:center;
+    align-content: center;
 }
