@@ -59,10 +59,11 @@ img {
 
 .hero h1 {
     color: white;
-    letter-spacing: .6rem;
+    letter-spacing: .8rem;
     text-shadow: 3px 3px 5px #2A201C;
     font-size: 65px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 800;
 }
 
 .hero p {
