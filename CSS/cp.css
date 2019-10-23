@@ -216,3 +216,7 @@ input[type=submit]:hover {
     margin-top: 150px;
     align-content: center;
 }
+
+.boxes img {
+    width: 25%;
+}
