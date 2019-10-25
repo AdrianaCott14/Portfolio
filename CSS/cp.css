@@ -6,6 +6,8 @@ Warm Brown/Black - #2A201C
 Slate Grey - #7F7984
 */
 
+/*--------Everything--------*/
+
 body {
     background-color: #A1A2B4;
     margin: 0px;
@@ -32,43 +34,9 @@ h4 {
 p {
     font-family: 'Open Sans Condensed', sans-serif;
 }
+
 img {
     width: 100%;
-}
-
-.hero img {
-    display: block;
-}
-
-.hero {
-    position: relative;
-}
-
-.hero .text-wrapper {
-    position: absolute;
-    background-color: rgba(0, 0, 0, .3);
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero h1 {
-    color: white;
-    letter-spacing: .8rem;
-    text-shadow: 3px 3px 5px #2A201C;
-    font-size: 65px;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-family: 800;
-}
-
-.hero p {
-    margin: 0;
-    color: #fff;
 }
 
 header ul {
@@ -105,6 +73,53 @@ footer {
     display: block;
     color: white;
 }
+
+/*main {*/
+
+/*    align-self: center;*/
+
+/*    max-width: 60em;*/
+
+/*}*/
+
+/*--------Hero--------*/
+
+.hero img {
+    display: block;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero .text-wrapper {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .3);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    color: white;
+    letter-spacing: .8rem;
+    text-shadow: 3px 3px 5px #2A201C;
+    font-size: 65px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 800;
+}
+
+.hero p {
+    margin: 0;
+    color: #fff;
+}
+
+/*------CSS Picture Layout--------*/
 
 .row {
     display: flex;
@@ -144,78 +159,11 @@ footer {
     }
 }
 
-/* Style inputs with type="text", select elements and textareas */
+/*--------Home Page--------*/
 
-input[type=text],
-select,
-textarea {
-    width: 100%;
-    /* Full width */
-    padding: 12px;
-    /* Some padding */
-    border: 1px solid #B54E6F;
-    /* Gray border */
-    border-radius: 4px;
-    /* Rounded borders */
-    box-sizing: border-box;
-    /* Make sure that padding and width stays in place */
-    margin-top: 6px;
-    /* Add a top margin */
-    margin-bottom: 16px;
-    /* Bottom margin */
-    resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
-}
+/*--------About me--------*/
 
-/* Style the submit button with a specific background color etc */
-
-input[type=submit] {
-    background-color: #B54E6F;
-    color: #D4CFD2;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-
-input[type=submit]:hover {
-    background-color: #926E64;
-}
-
-/* Add a background color and some padding around the form */
-
-.container {
-    border-radius: 5px;
-    background-color: #D4CFD2;
-    padding: 20px;
-}
-
-.button {
-    background-color: #B54E6F;
-    border: none;
-    color: #D4CFD2;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
-.box {
-    width: 100%;
-    padding: 10px;
-    background-color: #D4CFD2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 350px;
-    margin-top: 150px;
-    align-content: center;
-}
+/*--------Content--------*/
 
 .boxes img {
     width: 35%;
@@ -230,7 +178,5 @@ input[type=submit]:hover {
     margin: 0px 200px;
 }
 
-/*main {*/
-/*    align-self: center;*/
-/*    max-width: 60em;*/
-/*}*/
+
+/*--------Resume--------*/
