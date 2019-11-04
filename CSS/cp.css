@@ -165,18 +165,103 @@ footer {
 
 /*--------Content--------*/
 
+a {
+    cursor: pointer;
+    display: block;
+}
+
 .boxes img {
-    width: 35%;
-    padding: 40px;
+    width: 100%;
+    display: block;
+    max-width: 350px;
 }
 
 .boxes {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 0px 200px;
+    font-weight: 600;
+    /*justify-content: center;*/
+    /*flex-wrap: wrap;*/
+    /*align-items: center;*/
+    /*margin: 0px 200px;*/
 }
+
+.box {
+    position: relative;
+    margin-left: 1rem;
+}
+
+.text-wrapper {
+  background-color: rgba(0,0,0,0.2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.box:first-child {
+  margin-left: 0;
+}
+
+.box .image-wrapper::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,.2);
+  z-index: 10;
+}
+
+.box:hover .image-wrapper::after {
+  background-color: transparent;
+}
+
+.box .text-wrapper {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  background: linear-gradient(
+    to bottom,
+    transparent 0,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  padding: 3rem .5rem .75rem;
+}
+
+/*@media (max-width: 700px) {*/
+/*  .boxes {*/
+/*    flex-wrap: wrap;*/
+/*  }*/
+
+/*  .box {*/
+/*    flex: 40%;*/
+/*    margin-bottom: 1rem;*/
+/*  }*/
+
+/*  .box:nth-of-type(3) {*/
+/*    margin-left: 0;*/
+/*  }*/
+/*}*/
+
+/*@media (max-width: 460px) {*/
+/*  .boxes {*/
+/*    flex-wrap: nowrap;*/
+/*    flex-direction: column;*/
+/*  }*/
+  
+/*  .box {*/
+/*    margin: 0 0 1rem;*/
+/*  }*/
+/*}*/
+
+
 
 
 /*--------Resume--------*/
